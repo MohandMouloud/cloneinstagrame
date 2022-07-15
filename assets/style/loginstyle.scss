@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+.alignee{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 32px auto;
+    max-width: 1000px;
+}
+.row{
+    justify-items: center;
+    background-image: url(/assets/img/photoinstagram.png);
+    background-size: 465px 635px ;
+    height: 635px;
+    width: 465px;
+    overflow: hidden;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+
+    .image{
+
+        display: flex;
+        width: 250px;
+        position: absolute;
+        left: 422.5px;
+        top: 58px;
+        animation-duration: 10s;
+        animation-name: mesImage;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes mesImage {
+    0%{
+        transform: translateX(0);
+        transition: ease-out;
+    }
+    25%{
+        transform: translateX(-250px);
+    }
+    50%{
+        transform: translateX(-500px);
+    }
+    75%{
+        transform: translateX(-750px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    // margin: 32px auto 0;
+    justify-content: center;
+    div{
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid;
+    background-color: white;
+
+.logoinstagram{
+    margin: 40px 0px 30px;
+}
+    
+}
+form{
+    &>div{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 14px 0;
+        max-width: 350px;
+        input{
+            padding: 12px;
+            width: 100%;
+            }
+        .btn{
+            background-color:#0095f6;
+        }
+        
+    }
+    .motdepasseoublie{
+        a{
+            color: #00376b;
+        }
+    }
+}
+.separation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ligne{
+    
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+}
+
+// -------------------------pas de compte------------------------
+
+.nocompte{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    border: 1px solid;
+    padding: 20px 0px;
+    justify-content: center;
+
+    a{
+        padding: 0px 5px;
+        color: #0095f6;
+    }
+}
+
+.disponible{
+    max-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        width: 150px;
+        height: 40px;
+    }
+}
