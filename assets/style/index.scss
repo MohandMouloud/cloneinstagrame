@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fafafa;
+ }
+
+//----------------------nav menu--------------------------
+.navinstagram{
+    box-shadow:0px -1px 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffff;
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 900px;
+        max-width: 900px;
+    }
+    .logoinsta{
+        margin: 5px 0 0 0 ;
+        width: 103px;
+        height: 29px;
+    }
+    
+    .search{
+        padding: 10px;
+        width: 250px;background-color: #efefef;
+        border: 2px;
+        border-radius: 8px;
+    
+    
+    }
+    .links{
+        a{
+            margin: 0 5px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+//---------------------- corp principal-----------------------------
+
+.corpPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.publicationetStory{
+    background-color: #fafafa;
+    width: 500px;
+    padding: 20px;
+}
+
+
+.story{
+    background-color: #ffff;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    
+    a{
+        img{
+            width: 56px;
+            height: 56px;
+            border: 4px  ridge;
+            border-radius: 50%;
+            
+            margin: 20px 5px 20px 20px;
+        }
+    }
+}
+
+.publication{
+    background-color: #ffff;
+    height: 100%;
+    margin-top: 15px;
+}
+
+//-----------------Suggestions--------------
+aside{
+    padding: 20px;
+}
+
+.suggestions{
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    a{
+        img{
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.justetext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+//------------------Footer--------------
+footer{
+ max-width: 350px;
+ padding-bottom: 52px;
+ padding-top: 24px;
+
+    .linksFooter{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            color: rgba(var(--f52,142,142,142),1);
+            font-size: 13px;
+            line-height: 18px;
+            margin: 0 8px 12px 8px;
+        }
+    }
+    .copyright{
+        color: rgba(var(--f52,142,142,142),1);
+        font-size: 13px;
+        line-height: 18px;
+        text-align: start;
+    }
+}
